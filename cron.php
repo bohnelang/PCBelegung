@@ -18,7 +18,7 @@ for($i=20;$i<70;$i++){
 		$pf=popen("PASSWD=geheim /usr/bin/net rpc registry enumerate 'HKEY_USERS' -S $ip  -U ad\\\\Administrator 2>&1 ","r");
 		if($pf){
 			while(!feof($pf)){
-				$read = trim(fread($pf, 1024));
+				$read = trim(fgets($pf, 80));
 				if(strstr($read,"_Classes")){
 					$r = 1; 
 					break;
