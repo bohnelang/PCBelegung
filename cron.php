@@ -17,20 +17,16 @@ for($i=20;$i<70;$i++){
 		$r=0;
 		$pf=popen("PASSWD=geheim /usr/bin/net rpc registry enumerate 'HKEY_USERS' -S $ip  -U ad\\\\Administrator 2>&1 ","r");
 		if($pf){
-			while(!feof($pf)){
-				$read = trim(fgets($pf, 80));
-				if(strstr($read,"_Classes")){
-					$r = 1; 
-					break;
-				}
-				if(strstr($read,"Connection failed")){
-					$r = 2; 
-					break;
-                                }
-			}
-			if($r==0) $r = 3; 
-			pclose($pf);
-		}
+                        $cl=0;
+                        while(!feof($pf)){
+                                $read = trim(fgets($pf, 80));
+                                if(strstr($read,"_Classes")){ $cl++; $r=1;      }
+                                if(strstr($read,"Connection failed")){ $r = 2; break; }
+                        }
+                        if($cl>1) $r=6;
+                        if($r==0) $r=3;
+                        pclose($pf);
+                }
 		
 	} else {
 		$r = 4;
