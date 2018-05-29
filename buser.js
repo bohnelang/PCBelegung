@@ -1,5 +1,5 @@
 function fetch_seats(){
-	var scol = ["white","red","#EFEFEF","#8FFF8F","#CFCFCF", "#CFFFCF"];
+	var scol = ["white","red","#EFEFEF","#8FFF8F","#CFCFCF", "#CFFFCF","#FF0080"];
 
 	if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
