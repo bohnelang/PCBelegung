@@ -3,7 +3,7 @@ Shows free and used computers on a web page
 
 You need to change URLS and IP numbers to your environmant...
 
-Demo: https://www.umm.uni-heidelberg.de/bibl/pcbelegung.html
+Demo: https://www.umm.uni-heidelberg.de/bibliothek/computer-software-wlan/pc-belegung/
 
 Article:
 Bohne-Lang Andreas (2018) - 
