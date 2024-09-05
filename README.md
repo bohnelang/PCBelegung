@@ -1,6 +1,8 @@
 # PCBelegung
 Shows free and used computers on a web page 
 
+![Bild](https://raw.githubusercontent.com/bohnelang/PCBelegung/master/pcbelegung1.JPG) 
+
 You need to change URLS and IP numbers to your environmant...
 
 Demo: https://www.umm.uni-heidelberg.de/bibliothek/computer-software-wlan/pc-belegung/
