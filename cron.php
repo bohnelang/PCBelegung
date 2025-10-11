@@ -1,10 +1,11 @@
 <?php
 
-# Computenames in shor: medma1176, ... 
+# Computenames verkürzt: medma1176, ... 
 $rere=array("1176","1173","1174","1180","1181","1181","1178","1184","1182","1185","1177","1187","1183","1191","1189","1188","1190","1186","1179","1192","1175");
 
 $cls = array();
 
+# Parallel Abfrage
 for($i=0;$i<count($rere);$i++){
 
   $pid = pcntl_fork();
